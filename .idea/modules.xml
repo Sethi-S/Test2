@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SkyRewardsService.iml" filepath="$PROJECT_DIR$/SkyRewardsService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SkyRewardsService_main.iml" filepath="$PROJECT_DIR$/.idea/modules/SkyRewardsService_main.iml" group="SkyRewardsService" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SkyRewardsService_test.iml" filepath="$PROJECT_DIR$/.idea/modules/SkyRewardsService_test.iml" group="SkyRewardsService" />
+    </modules>
+  </component>
+</project>
