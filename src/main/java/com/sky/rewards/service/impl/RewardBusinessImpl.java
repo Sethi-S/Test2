@@ -15,10 +15,8 @@ import java.util.Set;
 public class RewardBusinessImpl implements RewardBusiness {
     @Override
     public List<String> getReward(Set<ChannelValue> channelTypeSet) {
-        List<String> list = new ArrayList<>();
-        Iterator<ChannelValue> channelValueIterator = channelTypeSet.iterator();
-        while (channelValueIterator.hasNext()) {
-            ChannelValue channelValue = channelValueIterator.next();
+        List<String> list = new ArrayList<>(channelTypeSet.size());
+        for(ChannelValue channelValue : channelTypeSet) {
             if (channelValue.equals(ChannelValue.SPORTS)) {
                 list.add(RewardValue.CHAMPIONS_LEAGUE_FINAL_TICKET.getDescription());
             } else if (channelValue.equals(ChannelValue.MOVIES)) {

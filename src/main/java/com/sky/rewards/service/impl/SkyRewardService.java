@@ -39,7 +39,7 @@ public class SkyRewardService implements RewardService {
             List<String> rewardValueList = rewardBusiness.getReward(channelValueSet);
             reward.setRewardValues(rewardValueList);
             if (rewardValueList.size() == 0)
-                reward.setMessage("Customer is not eligible for rewards");
+                reward.setMessage("Customer is not eligible for Rewards");
         }
         return reward;
     }
