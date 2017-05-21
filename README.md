@@ -1,3 +1,4 @@
+
 # Sky Rewards Service
 
 The task for this assignment is to create a Reward Service to see which rewards are available based on the channel subscriptions
@@ -57,6 +58,7 @@ The response would be
   "message": "Successful Response for Rewards"
 }
 ```
+The Elibiblity Service stub assumes that Account numbers in the range 1 to 5 are customer eligible and numbers in the range 6 to 10 are not eligible for Rewards. There are no other Account numbers known to the system.
 
 ## Dependency Injection
 The principle of Dependency Injection (DI) is followed throughout the system. DI is done using the simple Spring Boot
