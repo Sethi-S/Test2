@@ -1,6 +1,6 @@
 package com.sky.rewards;
 
-import com.sky.rewards.service.impl.RewardBusinessImpl;
+import com.sky.rewards.service.impl.SimpleRewardBusiness;
 import com.sky.rewards.value.ChannelValue;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ public class RewardBusinessTest {
 
     @Test
     public void givenSomeValidChannelsThenReturnAList() {
-        RewardBusinessImpl rewardBusiness = new RewardBusinessImpl();
+        SimpleRewardBusiness rewardBusiness = new SimpleRewardBusiness();
         Set<ChannelValue> channelTypeSet = new HashSet<>(2);
         channelTypeSet.add(ChannelValue.KIDS);
         channelTypeSet.add(ChannelValue.MOVIES);
@@ -27,7 +27,7 @@ public class RewardBusinessTest {
 
     @Test
     public void givenKidsChannelThenReturnNoRewards() {
-        RewardBusinessImpl rewardBusiness = new RewardBusinessImpl();
+        SimpleRewardBusiness rewardBusiness = new SimpleRewardBusiness();
         Set<ChannelValue> channelTypeSet = new HashSet<>(2);
         channelTypeSet.add(ChannelValue.KIDS);
         List<String> rewardList = rewardBusiness.getReward(channelTypeSet);
@@ -36,7 +36,7 @@ public class RewardBusinessTest {
 
     @Test
     public void givenSportsChannelThenReturnChampions() {
-        RewardBusinessImpl rewardBusiness = new RewardBusinessImpl();
+        SimpleRewardBusiness rewardBusiness = new SimpleRewardBusiness();
         Set<ChannelValue> channelTypeSet = new HashSet<>(2);
         channelTypeSet.add(ChannelValue.SPORTS);
         List<String> rewardList = rewardBusiness.getReward(channelTypeSet);
@@ -45,7 +45,7 @@ public class RewardBusinessTest {
 
     @Test
     public void givenSportsAndKidsChannelThenReturnChampions() {
-        RewardBusinessImpl rewardBusiness = new RewardBusinessImpl();
+        SimpleRewardBusiness rewardBusiness = new SimpleRewardBusiness();
         Set<ChannelValue> channelTypeSet = new HashSet<>(2);
         channelTypeSet.add(ChannelValue.SPORTS);
         channelTypeSet.add(ChannelValue.KIDS);

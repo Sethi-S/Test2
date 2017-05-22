@@ -12,7 +12,7 @@ import java.util.Set;
 /**
  * Created by Rajesh on 20-May-17.
  */
-public class RewardBusinessImpl implements RewardBusiness {
+public class SimpleRewardBusiness implements RewardBusiness {
     @Override
     public List<String> getReward(Set<ChannelValue> channelTypeSet) {
         List<String> list = new ArrayList<>(channelTypeSet.size());

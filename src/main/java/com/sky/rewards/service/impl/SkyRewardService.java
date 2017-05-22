@@ -50,6 +50,6 @@ public class SkyRewardService implements RewardService {
     }
 
     private RewardBusiness getRewardBusiness() {
-        return new RewardBusinessImpl();
+        return new SimpleRewardBusiness();
     }
 }
