@@ -1,5 +1,5 @@
 
-# Sky Rewards Service
+# 1Sky 1Rewards 1Service
 
 The task for this assignment is to create a Reward Service to see which rewards are available based on the channel subscriptions
 
@@ -30,7 +30,7 @@ Unit tests can be run with the `test` gradle task:
     ./gradlew test
     
 ## Design
-The `SkyRewardsService` is built in SpringBoot. So there is no configuration required to start and use the application.
+The `1Sky1Rewards1Service` is built in SpringBoot. So there is no configuration required to start and use the application.
 Just a plain old java command on the Application's main method would bring up the Application.
 
 ## Usage
