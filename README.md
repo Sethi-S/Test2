@@ -4,7 +4,7 @@
 The task for this assignment is to create a Reward Service to see which rewards are available based on the channel subscriptions
 
 ## Continuous Integration
-[![Build Status](https://travis-ci.org/rajeshso/SkyRewardsService.svg?branch=master)](https://travis-ci.org/rajeshso/SkyRewardsService)
+[![Build Status](https://travis-ci.org/rajeshso/1Sky1Rewards1Service.svg?branch=master)](https://travis-ci.org/rajeshso/1Sky1Rewards1Service)
 
 Continuous Integration is set up using [Travis CI](https://travis-ci.org).
 
